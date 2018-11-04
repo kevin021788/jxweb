@@ -82,12 +82,8 @@
 			top: 0;
 		}
 		
-		.wrap .container {
-			height: 800px;
-			margin-top: -200px;
-		}
 		
-		.wrap .container.sban {
+		.wrap .container .sban {
 			width: 100%;
 			margin: 0px;
 			padding: 0px;
@@ -99,7 +95,7 @@
 		}
 		
 		.wrap .container .sban li {
-			float: left;
+			float:left;
 			width: 50% !important;
 			overflow: hidden !important;
 			display: block;
@@ -120,8 +116,18 @@
 			line-height: 70px;
 			position: relative;
 		}
-		
+		.wrap .container {
+			height: 800px;
+			margin-top: -200px;
+		}
 		.footer {}
+		.footer .footer-nav {background: url(img/footerbg.jpg) repeat-x; width: 100%; height: 70px; display: block;}
+		.footer .footer-nav .container li { float: left; line-height: 70px; list-style: none; font-weight: bold;}
+		.footer .footer-nav .container li.tel {background: url(img/tel.png) no-repeat center left; padding-left: 50px; padding-right: 50px;}
+		.footer .footer-nav .container li.mail {background: url(img/mail.png) no-repeat center left; padding-left: 50px; padding-right: 50px;}
+		.footer .footer-nav .container li.address {background: url(img/address.png) no-repeat center left; padding-left: 50px; padding-right: 50px;}
+		.footer .footer-logo { height: 280px; background: url(img/footer-logo.png) center no-repeat;}
+		.footer .footer-copyright { background: #000000; height: 50px; color: #FFFFFF; text-align: center; line-height: 50px; font-weight: bold;}
 	</style>
 
 	<head>
@@ -162,8 +168,9 @@
 
 			</header>
 			<div class="banner"></div>
+			
 			<div class="container">
-				<div>
+				<div class="small">
 					<ul class="sban">
 						<li><img src="img/ban1.jpg">
 							<div class="title">air transport</div>
@@ -175,9 +182,20 @@
 				</div>
 			</div>
 		</div>
-		</div>
+		
 
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer-nav">
+				<ul class="container">
+					<li class="tel">0086-13556194195</li>
+					<li class="mail">123456789@qq.com</li>
+					<li class="address">Room 1306, office building, Shuangcheng International Building,</li>
+				</ul>
+			</div>
+			<div class="footer-logo">
+			</div>
+			<div class="footer-copyright">© China Radio International.CRI. All Rights Reserved.16A Shijingshan Road,Beijing,China.100040</div>
+		</footer>
 	</body>
 
 </html>
